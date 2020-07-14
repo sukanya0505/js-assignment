@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const constVariable =10;
+       console.log(constVariable);//The code will throw an error when we try to reassign the existing const variable.
+       var a =10;   
+       var a =20;   
+       console.log(a);//here the a takes the value of the recently declared value of a
+       let b =10;
+      //let b =20; //throws syntax error as here its declared again and again
+      console.log(b);
+      function nodeSimplified(){
+  let a =10;
+  console.log(c);  // output 10
+  if(true){
+   let c=20;
+   console.log(c); // here it gives output s 20 as it is temporary only inside the loop
+  }
+  console.log(c);  // here it takes the value as 10 as it is otside the loop
+}
+    </script>
+</body>
+</html>
